@@ -19,7 +19,7 @@ jobs:
         id: release_version
         run: |
           echo "VERSION=$(echo $GITHUB_REF_NAME | sed 's/v\(.*\)/\1/')" >> $GITHUB_ENV
-          echo "REPO_OWNER=$(echo ${GITHUB_REPOSITORY_OWNER,,})" >> $GITHUB_ENV
+          echo "REPO_OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_ENV
 
       -
         name: Set Up QEMU
