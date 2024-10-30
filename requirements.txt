@@ -1,0 +1,6 @@
+ddddocr
+Pillow
+numpy
+requests
+fastapi
+uvicorn
